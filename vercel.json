@@ -1,0 +1,15 @@
+{
+  "buildCommand": "npm run build",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "outputDirectory": ".next",
+  "env": {
+    "DATABASE_URL": "postgresql://neondb_owner:npg_RgZBd2IHS4Jp@ep-bitter-bonus-anar1j79-pooler.c-6.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
+  },
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
+  ]
+}

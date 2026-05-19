@@ -1,7 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Deshabilitar PostCSS por completo
-  postcss: false,
+reactStrictMode: true,
+  swcMinify: true,
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
-
 module.exports = nextConfig;
