@@ -164,6 +164,20 @@ export default function AssetsPage() {
                 <td style={{ padding: "12px" }}>{asset.user?.name || "-"}</td>
                 <td style={{ padding: "12px" }}>
                   <button
+                    onClick={() => router.push(`/assets/${asset.id}/maintenance`)}
+                    style={{
+                      background: "#8b5cf6",
+                      color: "white",
+                      padding: "4px 12px",
+                      border: "none",
+                      borderRadius: "4px",
+                      cursor: "pointer",
+                      marginRight: "8px"
+                    }}
+                  >
+                    Mantenimiento
+                  </button>
+                  <button
                     onClick={() => router.push(`/assets/${asset.id}/edit`)}
                     style={{
                       background: "#10b981",

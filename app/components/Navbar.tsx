@@ -29,7 +29,6 @@ export default function Navbar() {
       await signOut({ 
         redirect: false,
       });
-      // Forzar redirección manual
       window.location.href = "/login";
     } catch (error) {
       console.error("Error al cerrar sesión:", error);
@@ -76,6 +75,15 @@ export default function Navbar() {
             borderRadius: "4px"
           }}>
             Activos
+          </Link>
+          <Link href="/maintenance" style={{
+            color: "white",
+            textDecoration: "none",
+            padding: "0.5rem",
+            background: pathname === "/maintenance" ? "#374151" : "transparent",
+            borderRadius: "4px"
+          }}>
+            Mantenimientos
           </Link>
         </div>
       </div>

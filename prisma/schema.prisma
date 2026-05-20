@@ -40,7 +40,7 @@ model Maintenance {
   assetId     String
   asset       Asset    @relation(fields: [assetId], references: [id])
   date        DateTime @default(now())
-  type        String
+  type        String   
   description String
   cost        Float?
   technician  String?
